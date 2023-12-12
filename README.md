@@ -51,11 +51,60 @@ Python 3.7+
 import greedysms
 ```
 
-Подключение кода:
+### Инициализация API:
 ```python
 from greedysms import GreedyAPI 
 
 api = GreedyAPI(token='') # в ковычки добавьте свой токен. P.S Для активации токена вы должны написать сапорту!!!
 ```
+### Покупка номера
 
-Позже напишу полностью readme.
+```python
+# Получите идентификаторы вашего сервиса и страны
+service_id = 'ваш_ид_сервиса'
+country_id = 'ваш_ид_страны'
+
+# Покупка номера
+response_buy_number = api.buy_number(service_id=service_id, country_id=country_id)
+print(response_buy_number)
+```
+
+### Получение статуса активации
+
+```python
+# Получение статуса активации по operation_id
+response_get_status = api.get_status(operation_id=operation_id)
+print(response_get_status)
+```
+
+### Изменение статуса активации
+
+```python
+# Изменение статуса на "Отменить активацию" (статус 8)
+response_set_status = api.set_status(operation_id=operation_id, status=8)
+print(response_set_status)
+```
+
+### Получение цены на номер
+
+```python
+# Получение цены на номер
+response_get_price = api.get_price(service_id=service_id, country_id=country_id)
+print(response_get_price)
+```
+
+### Получение цены на номер
+
+```python
+# Получение цен на все сервисы в стране
+response_get_prices = api.get_prices(country_id=country_id)
+print(response_get_prices)
+```
+
+### Получение количества доступных номеров для различных сервисов
+
+```python
+# Получение количества доступных номеров для различных сервисов
+response_get_count_numbers = api.get_count_numbers(country_id=country_id)
+print(response_get_count_numbers)
+```
