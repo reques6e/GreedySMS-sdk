@@ -46,14 +46,9 @@
 # Требования
 Python 3.7+
 
-<p>Импортирование:</p>
-```python
-import greedysms
-```
-
 ### Инициализация API:
 ```python
-from greedysms import GreedyAPI 
+from greedysms.greedy import GreedyAPI 
 
 api = GreedyAPI(token='') # в ковычки добавьте свой токен. P.S Для активации токена вы должны написать сапорту!!!
 ```
