@@ -26,7 +26,7 @@
 - `8` — Отменить активацию
 
 Дополнительные параметры:
-Список стран — https://docs.greedyapi.ru/spiski/spisok-stran.
-Список сервисов — https://docs.greedyapi.ru/spiski/spisok-servisov.
+<p>Список стран — https://docs.greedyapi.ru/spiski/spisok-stran.</p>
+<p>Список сервисов — https://docs.greedyapi.ru/spiski/spisok-servisov.</p>
 
-Официальная документация - https://docs.greedyapi.ru/
+<p>Официальная документация - https://docs.greedyapi.ru/</p>
