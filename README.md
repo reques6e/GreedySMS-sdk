@@ -55,6 +55,15 @@ from greedysms.greedy import GreedyAPI
 
 api = GreedyAPI(token='') # в ковычки добавьте свой токен. P.S Для активации токена вы должны написать сапорту!!!
 ```
+### Получение информации о себе
+
+```python
+
+# Покупка номера
+get_me = api.get_me()
+print(get_me)
+```
+
 ### Покупка номера
 
 ```python
