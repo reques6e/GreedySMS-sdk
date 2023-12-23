@@ -9,6 +9,12 @@ class GreedyAPI:
         # Параметры для всех запросов
         self.headers = {'Authorization': f'Bearer {token}'}
 
+     def get_me(self, service_id, country_id):
+        endpoint = 'getMe'
+
+        response = self.send_request('GET', endpoint)
+        return response.json()
+         
     def buy_number(self, service_id, country_id):
         endpoint = 'buyNumber'
         params = {'service': service_id, 'country': country_id}
