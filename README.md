@@ -59,7 +59,7 @@ api = GreedyAPI(token='') # в ковычки добавьте свой токе
 
 ```python
 
-# Покупка номера
+# Получение данных
 get_me = api.get_me()
 print(get_me)
 ```
